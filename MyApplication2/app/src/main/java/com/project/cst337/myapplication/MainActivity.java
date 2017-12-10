@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     public TextView morseCode;
     public EditText u_input;
     public String user_input;
-    public String morse1="morse code: ";
+    public String morse1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                morse1="morse code: ";
                 user_input=u_input.getText().toString();
                 char[] ch=user_input.toCharArray();
                 for(int i=0;i<user_input.length();i++)

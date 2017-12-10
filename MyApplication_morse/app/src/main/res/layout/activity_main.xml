@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.cst337.myapplication.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="492dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="31dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="208dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/Button01"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:ems="10"
+                android:hint="Enter some text..."
+                android:inputType="text"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/btnOn"
+                android:layout_width="166dp"
+                android:layout_height="79dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark"
+                android:text="send"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/morse"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:layout_weight="0.51"
+            android:text="*Morse Code*"
+            android:textSize="32sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
